@@ -1,0 +1,10 @@
+<!doctype html> <html class=no-js> <head> <meta charset=utf-8> <meta name=description> <meta name=viewport content="width=device-width, initial-scale=1"> <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel=stylesheet type=text/css> <title>Lazy Loading Demo</title> <link rel=apple-touch-icon href=apple-touch-icon.png>  <link rel=stylesheet href=styles/main.css> <script src=scripts/vendor/modernizr.js></script> </head> <body> <!--[if lt IE 10]>
+ <p class="browserupgrade">You are using an outdated browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+ <![endif]--> <header class=navbar> <h3>Stellar News Feed!</h3> </header> <div id=news-feed> <script id=news-template type=text/template> {{#each news}} <p class="fader well"> <strong>{{moment published}}: </strong> <span class="title">{{title}}</span> </p> {{/each}} </script> </div> <div class=spinner> <div class=bounce1></div> <div class=bounce2></div> <div class=bounce3></div> </div>  <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script> <script src=scripts/vendor.js></script> <script src=scripts/plugins.js></script> <script src=scripts/main.js></script> </body> </html> 
