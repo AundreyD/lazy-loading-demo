@@ -1,0 +1,7 @@
+{
+	"globals": {
+		"jQuery": false,
+		"Handlebars": false,
+		"moment": false
+	}
+}

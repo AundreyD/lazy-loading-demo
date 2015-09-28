@@ -1,6 +1,8 @@
 (function($) {
-  var keys,
-      jsonCount = 0,
+
+  'use strict';
+
+  var jsonCount = 0,
       offsetCount = 0,
       newsFeed = $('#news-feed'),
       template = Handlebars.compile(document.getElementById('news-template').innerHTML);
@@ -9,7 +11,7 @@
   Handlebars.registerHelper('moment', function(context) {
     return window.moment ? moment(context, 'YYYY-MM-DD hh:mm:ss').fromNow() : context;
   });
-  
+
   // Determine length of JSON object
   $.ajax({
     url: 'http://www.stellarbiotechnologies.com/media/press-releases/json',
@@ -46,7 +48,7 @@
           }, 50);
         }
       });
-      offsetCount+=20;
+      offsetCount += 20;
     }, 200);
   };
 
